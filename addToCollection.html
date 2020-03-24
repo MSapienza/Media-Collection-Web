@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+	
+	<head> 
+	    <title>Media Collection UI</title> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="addToCollection.css" rel="stylesheet" type="text/css">
+        <script src="dataHandling.js"></script>
+    </head>
+    <br><br>
+    <body>
+        <form action="/addData.php" method="get">
+            <label for="title">Title</label><br>
+            <input type="text" id="title" name="title" value="Pokemon"><br><br>
+            <label for="writer">Writer</label><br>
+            <input type="text" id="writer" name="writer" value="Matt Sapienza"><br><br>
+            <label for="year">Year Released</label><br>
+            <input type="text" id="year" name="year" value="1989"><br><br>
+            <label for="rating">Rating</label><br>
+            <input type="text" id="rating" name="rating" value="R"><br><br>
+            <label>Media Type: </label> &nbsp;
+            <input type="radio" id="Book" name="mediaType" value="Book">
+            <label for="Book">Book</label>
+            <input type="radio" id="Movie" name="mediaType" value="Movie">
+            <label for="Movie">Movie</label>
+            <input type="radio" id="TV Show" name="mediaType" value="TV Show">
+            <label for="TV Show">TV Show</label><br><br>
+            <label>Format/Platform: </label> &nbsp;
+            <input type="radio" id="Blu-Ray" name="platform" value="Blu-Ray">
+            <label for="Blu-Ray">Blu-Ray</label>
+            <input type="radio" id="DigitalHD" name="platform" value="DigitalHD">
+            <label for="DigitalHD">Digital - Hard Drive</label>
+            <input type="radio" id="Netflix" name="platform" value="Netflix">
+            <label for="Netflix">Netflix</label><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" id="Hulu" name="platform" value="Hulu">
+            <label for="Hulu">Hulu</label>
+            <input type="radio" id="Paperback" name="platform" value="Paperback">
+            <label for="Paperback">Paperback Book</label>
+            <input type="radio" id="Hardcover" name="platform" value="Hardcover">
+            <label for="Hardcover">Hardcover Book</label><br><br>
+            <input type="submit" value="Submit">
+        </form> 
+    </body>
+    
+    <footer>
+        <div class = "footer">
+            <a href = "index.html">Home</a>
+            <a href = "about.html">About The Creator</a> 
+            <a href = "http://www.imdb.com">Lookup Movies and TV Show Details</a> 
+            <a href = "http://www.amazon.com">Lookup Book Details</a> 
+        </div>
+    </footer>
+</html>

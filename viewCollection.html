@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+	
+	<head> 
+	    <title>Media Collection UI</title> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="index.css" rel="stylesheet" type="text/css">
+        <script src="dataHandling.js"></script>
+    </head>
+    
+    <body>
+        <h3>What Collection Would You Like to View?</h3><br><br><br>
+        <form>
+            <select name = "collectionTypes" onchange = "viewMedia(this.value)">
+                <option value = "">Select A Collection</option>
+                <option value = "All" > All </option>
+                <option value = "Movie" > Movies</option> 
+                <option value = "TV Show" > TV Shows </option> 
+                <option value = "Book"> Books</option>
+            </select>
+        </form>
+    </body>
+    <div id = "returnCollection" class = "returnCollection"></div>
+    <footer>
+        <div class = "footer">
+            <a href = "index.html">Home</a>
+            <a href = "about.html">About The Creator</a> 
+            <a href = "http://www.imdb.com">Lookup Movies and TV Show Details</a> 
+            <a href = "http://www.amazon.com">Lookup Book Details</a> 
+        </div>
+    </footer>
+</html>
